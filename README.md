@@ -19,8 +19,7 @@ dnscrypt.pl runs 3 services:
   * ut1 phishing domains: https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/phishing/domains
   * WHITELIST: https://github.com/pysiak/dnscrypt.pl/blob/main/configs/whitelist.conf
   
-* dnscrypt.pl-armada: (undelegated + 5 blocklists + 7 other blocklists + 1 manually main
-  * all of dnscrypt.pl-guardian
+* dnscrypt.pl-armada: (all of dnscrypt.pl-guardian + 7 other blocklists + 1 manually maintained)
   * manually maintained list added as I observe them through twitter and other sources: https://github.com/pysiak/dnscrypt.pl/blob/main/configs/manualblocks.conf
   * Polish Filters Team: https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADomains.txt
   * dom-bl-base: https://joewein.net/dl/bl/dom-bl-base.txt
