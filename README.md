@@ -1,0 +1,2 @@
+# dnscrypt.pl
+DNSCrypt Poland
