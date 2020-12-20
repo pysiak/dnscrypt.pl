@@ -32,7 +32,7 @@ wget -q https://v.firebog.net/hosts/APT1Rep.txt -O /tmp/apt1
 echo "$(date +%c) 14/14"
 wget -q https://cybercrime-tracker.net/all.php -O /tmp/cybercrime
 echo "$(date +%c) Manual Blocks"
-wget -q https://github.com/pysiak/dnscrypt.pl/blob/main/configs/manualblocks.conf -O /etc/unbound/manualblocks.conf
+wget -q https://raw.githubusercontent.com/pysiak/dnscrypt.pl/main/configs/manualblocks.conf -O /etc/unbound/manualblocks.conf
 
 echo "$(date +%c) Merging guardian"
 cat /tmp/cert.txt > ${BLOCKFILE_GUARDIAN}
@@ -64,7 +64,7 @@ sort ${BLOCKFILE_ARMADA} | uniq > ${BLOCKFILE_ARMADA}.tmp
 mv ${BLOCKFILE_ARMADA}.tmp ${BLOCKFILE_ARMADA}
 
 echo "$(date +%c) Removing whitelisted"
-wget -q https://github.com/pysiak/dnscrypt.pl/blob/main/configs/whitelist.conf -O /etc/unbound/whitelist.conf
+wget -q https://raw.githubusercontent.com/pysiak/dnscrypt.pl/main/configs/whitelist.conf -O /etc/unbound/whitelist.conf
 grep -Fvx -f /etc/unbound/whitelist.conf ${BLOCKFILE_ARMADA} > ${BLOCKFILE_ARMADA}.tmp
 mv ${BLOCKFILE_ARMADA}.tmp ${BLOCKFILE_ARMADA}
 grep -Fvx -f /etc/unbound/whitelist.conf ${BLOCKFILE_GUARDIAN} > ${BLOCKFILE_GUARDIAN}.tmp
