@@ -7,7 +7,11 @@ This is pure open source spirit.
 
 *scripts* folder contains the official scripts for [transparency](https://dnscrypt.pl/transparency/ "Transparency page of DNSCrypt Poland")
 
-## Setup
+[Live blocklists for guardian](https://poz1.dnscrypt.pl/guardian.txt)
+
+[Live count of blocklists for guardian](https://poz1.dnscrypt.pl/guardian_count.txt)
+
+## Services
 dnscrypt.pl runs 3 services:
 * dnscrypt.pl -> no blocklists
 * dnscrypt.pl-guardian (undelegated + 5 blocklists - whitelist)
@@ -19,7 +23,7 @@ dnscrypt.pl runs 3 services:
   * ut1 phishing domains: https://raw.githubusercontent.com/olbat/ut1-blacklists/master/blacklists/phishing/domains
   * WHITELIST: https://github.com/pysiak/dnscrypt.pl/blob/main/configs/whitelist.conf
   
-* dnscrypt.pl-armada: (all of dnscrypt.pl-guardian + 7 other blocklists + 1 manually maintained)
+* [not-live yet] dnscrypt.pl-armada: (all of dnscrypt.pl-guardian + 7 other blocklists + 1 manually maintained)
   * manually maintained list added as I observe them through twitter and other sources: https://github.com/pysiak/dnscrypt.pl/blob/main/configs/manualblocks.conf
   * Polish Filters Team: https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADomains.txt
   * dom-bl-base: https://joewein.net/dl/bl/dom-bl-base.txt
